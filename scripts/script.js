@@ -1,10 +1,7 @@
 function updateTimelineBar() {
-    console.log("In updated");
     const timelineContainer = document.querySelector(".timeline-container");
     const timelineBar = document.querySelector(".timeline-bar");
     const timelineItems = document.querySelectorAll(".timeline-item");
-
-    console.log(timelineBar, timelineContainer, timelineItems);
 
     if (timelineContainer && timelineBar && timelineItems) {
         const itemStyle = window.getComputedStyle(timelineItems[0]);
@@ -20,3 +17,17 @@ function updateTimelineBar() {
 
 window.addEventListener("load", updateTimelineBar);
 window.addEventListener("resize", updateTimelineBar);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const experienceContainer = document.querySelector(".timeline-container");
+
+    if (experienceContainer) {
+        experienceContainer.addEventListener("wheel", function (event) {
+            event.preventDefault();
+            experienceContainer.scrollBy({
+                left: event.deltaY * 1.3,
+                behavior: "smooth" 
+            });
+        });
+    }
+});
