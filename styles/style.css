@@ -17,7 +17,7 @@ h2 {
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
@@ -26,7 +26,23 @@ h2 {
 }
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 10%;
+    z-index: 1000;
     background-color: #1f1f1f;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #6EACDA;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #bccad4;
 }
 
 .tech-spacing {
@@ -56,7 +72,7 @@ h2 {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
-    max-width: 60vw;
+    max-width: 70vw;
 }
 
 .timeline-container::-webkit-scrollbar { 
@@ -103,3 +119,63 @@ h2 {
     opacity: 1;
 }
 
+.projects-section {
+    margin-bottom: 5em;
+}
+
+.projects-title {
+    color: #6EACDA;
+}
+
+.projects-img-row {
+    max-width: 70vw;
+}
+
+.projects-img {
+    aspect-ratio: 9/6;
+    height: auto;
+    width: 100%;
+    max-width: 900px;
+    max-height: 600px;
+}
+
+.projects-desc {
+    font-size: 1.3em;
+}
+
+.projects-stack-title {
+    font-size: 1.1em;
+    color: #6EACDA;
+}
+
+.projects-stack-item {
+    border: 1px solid white;
+}
+
+.carousel-control-colour-inverted .carousel-control-next, 
+.carousel-control-colour-inverted .carousel-control-prev,
+.carousel-control-colour-inverted button  {
+    filter: invert(100%);
+}
+
+.contact-btn-email {
+    background-color: #6edab1;
+}
+
+.contact-btn-linkedin,
+.resume-download {
+    background-color: #6EACDA;
+}
+
+.contact-btn-email:hover {
+    background-color: #6edab1ad;
+}
+
+.contact-btn-linkedin:hover,
+.resume-download:hover {
+    background-color: #6EACDAad;
+}
+
+.card {
+    background-color: #A888B5 ;
+}

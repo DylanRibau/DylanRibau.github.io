@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dylan Ribau Portfolio</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles/style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -14,30 +15,38 @@
     <body>
         <canvas id="backgroundCanvas"></canvas>
         <script src="./scripts/background.js"></script>
-        <!-- <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand" href="#">Dylan Ribau</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarContent">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Technologies</a>
+                            <a class="nav-link" href="#technologies">Technologies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Education</a>
+                            <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Experience</a>
+                            <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="files/resume.pdf" target="_blank" class="btn d-flex align-items-center resume-download">
+                                <i class="bi bi-file-person-fill me-2"></i> Resume
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav> -->
+        </nav>                
           
         <div class="d-flex justify-content-center align-items-center section container-fluid">
             <div>
@@ -47,9 +56,9 @@
                 <a href="#contact" class="btn">Let's Connect</a>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center section container-fluid">
+        <div class="d-flex justify-content-center align-items-center section container-fluid" id="technologies">
             <div>
-                <h1 class="text-center text-uppercase">Technologies</h1>
+                <h1 class="text-center text-uppercase margin-b-3">Technologies</h1>
                 <div>
                     <h2 class="text-center tech-spacing text-uppercase">Frontend</h2>
                     <div class="d-flex justify-content-evenly row">
@@ -147,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center section container-fluid">
+        <div class="d-flex justify-content-center align-items-center section container-fluid" id="experience">
             <div>
                 <h1 class="text-center text-uppercase margin-b-3">Experience</h1>                
                 <div class="timeline-container">
@@ -205,6 +214,123 @@
             </div>
         </div>
 
+        <div class="d-flex justify-content-center align-items-center section container-fluid" id="education">
+            <div>
+                <h1 class="text-center text-uppercase margin-b-3">Education</h1>  
+                <div class="row justify-content-center">
+                    <div class="col-md-8">            
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Software Development Advanced Diploma</h5>
+                                <h6 class="card-subtitle text-muted">Mohawk College</h6>
+                                <p class="card-text mt-2"><i class="bi bi-calendar"></i> 2016 - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center section container-fluid" id="projects">
+            <div>
+                <h1 class="text-center text-uppercase margin-b-3">Projects</h1>
+                <div class="projects-section">
+                    <div class="row text-center mb-3">
+                        <h2 class="projects-title">MTG Planechase App</h2>
+                    </div>
+                    <div class="d-flex row projects-img-row">
+                        <div class="col-4">
+                            <p class="projects-desc">An application made to integrate the MTG Planechase mechanic in my home games</p>
+                            <p class="projects-stack-title text-center pt-5">Tech Stack</p>
+                            <div class="row text-center">
+                                <div class="col-3 projects-stack-item m-2">Docker</div>
+                                <div class="col-3 projects-stack-item m-2">MySql</div>
+                                <div class="col-3 projects-stack-item m-2">Node</div>
+                                <div class="col-3 projects-stack-item m-2">Express</div>
+                            </div>
+                        </div>
+                        <div id="projects-carousel-1" class="col-8 carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#projects-carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#projects-carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/projects/planechase1.png" class="projects-img d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/projects/planechase2.png" class="projects-img d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel-1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel-1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-section">
+                    <div class="row text-center mb-3">
+                        <h2 class="projects-title">Pokemon Nuzlocke Tracker</h2>
+                    </div>
+                    <div class="d-flex row projects-img-row">
+                        <div id="projects-carousel-2" class="carousel-control-colour-inverted col-8 carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#projects-carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#projects-carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#projects-carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/projects/NuzlockeTracker1.png" class="projects-img d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/projects/NuzlockeTracker2.png" class="projects-img d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/projects/NuzlockeTracker3.png" class="projects-img d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel-2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel-2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>                            
+                        </div>
+                        <div class="col-4">
+                            <p class="projects-desc">Allows users to store data about their current nuzlocke runs and view stats about their pokemon</p>
+                            <p class="projects-stack-title text-center pt-5">Tech Stack</p>
+                            <div class="row text-center">
+                                <div class="col-3 projects-stack-item m-2">React</div>
+                                <div class="col-3 projects-stack-item m-2">Node</div>
+                                <div class="col-3 projects-stack-item m-2">Express</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center section container-fluid" id="contact">
+            <div>
+                <h1 class="text-center text-uppercase margin-b-3">Contact Me</h1>
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="mailto:dylanribau@gmail.com" class="btn d-flex align-items-center contact-btn-email">
+                        <i class="bi bi-envelope-fill me-2"></i> Email Me
+                    </a>            
+                    <a href="https://www.linkedin.com/in/dylan-ribau-90003a18a/" target="_blank" class="btn d-flex align-items-center contact-btn-linkedin">
+                        <i class="bi bi-linkedin me-2"></i> LinkedIn
+                    </a>
+                </div>
+            </div>  
+        </div>  
         <script src="./scripts/script.js"></script>
     </body>
 </html>

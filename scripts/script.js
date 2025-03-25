@@ -18,6 +18,7 @@ function updateTimelineBar() {
 window.addEventListener("load", updateTimelineBar);
 window.addEventListener("resize", updateTimelineBar);
 
+// Scroll in experience section
 document.addEventListener("DOMContentLoaded", function () {
     const experienceContainer = document.querySelector(".timeline-container");
 
